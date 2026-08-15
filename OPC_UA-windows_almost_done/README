@@ -1,0 +1,1 @@
+cd certs && zsh generate_certs.sh   # kendi anahtarını yerelde üretir

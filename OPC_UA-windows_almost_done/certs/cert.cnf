@@ -1,0 +1,18 @@
+[ req ]
+default_bits       = 2048
+distinguished_name = req_distinguished_name
+x509_extensions    = v3_req
+prompt             = no
+
+[ req_distinguished_name ]
+C  = TR
+ST = Ankara
+L  = Ankara
+O  = JarvisIoT
+CN = Jarvis OPC UA Client
+
+[ v3_req ]
+basicConstraints = CA:FALSE
+keyUsage = nonRepudiation, digitalSignature, keyEncipherment, dataEncipherment
+extendedKeyUsage = clientAuth
+subjectAltName = URI:urn:jarvis:client
